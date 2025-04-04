@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Hentaigana:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.main {
+
+  /*border:1px solid black;*/
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  margin: auto;
+
+}
+
+.main-nav {
+  display: flex;
+}
+
+.heading {
+  margin-top: 0.3rem;
+
+}
+
+.para-logo {
+  margin-left: 1.3rem;
+  font-size: 0.6rem;
+  color: rgba(0, 0, 0, 0.7);
+  min-width: 130px;
+}
+
+.list-main {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+  gap: 5rem;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+
+}
+
+.logo-image {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 2px solid #222222;
+  border-radius: 40px;
+  margin-right: 1rem;
+}
+
+#heading1st {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.logo-container {
+  display: flex;
+  margin-left: 6rem;
+}
+
+.option {
+  display: none;
+  color: #cccccc;
+  border: 2px solid #111112;
+  border-radius: 10px;
+  position: absolute;
+  top: 2rem;
+  font-weight: 500;
+  padding: 1.2rem;
+  line-height: 3rem;
+  font-family: "Poppins", sans-serif;
+  z-index: 1;
+
+}
+
+.list-items:hover .option {
+  display: block;
+  background-color: #121427;
+}
+
+.list-items {
+  position: relative;
+  cursor: pointer;
+}
+
+.list-link {
+  text-decoration: none;
+  color: black;
+}
+
+.list-items:hover .list-link {
+  color: blue;
+}
+
+.main-image-container {
+  width: 100%;
+  height: auto; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.main-image {
+  width: 100%;
+  height: 85vh;
+  max-height: 100%; /* Ensure it doesn't overflow */
+  object-fit: cover; /* Or use 'cover' if you want it to fill */
+  object-position: center;
+  position: relative;
+  top: 3rem;
+  border: 1px solid darkblue;
+  border-radius: 0 0 12rem 12rem;
+
+}
+
+.main-2 {
+  position: absolute;
+  top: 36%; /* Centers vertically */
+  left: 50%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Adjusts exact center */
+
+  font-size: 3rem;
+
+  /*background: rgba(255, 255, 255, 0.2); !* Semi-transparent background *!*/
+  background: linear-gradient(70deg, #affa90, #ff66ff);
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 47.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  color: #ffea00;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+
+
+  margin-top: 1.8rem;
+  margin-bottom: 2.2rem;
+
+  text-align: center;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ff0;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffea00;
+  }
+  100% {
+    text-shadow: 0 0 30px #ff0;
+  }
+}
+
+
+.bold {
+  font-weight: 1000;
+  color: #ffea00;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.8);
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #ff0;
+  }
+  50% {
+    text-shadow: 0 0 20px #ffea00;
+  }
+  100% {
+    text-shadow: 0 0 30px #ff0;
+  }
+}
+
+
+.main-3 {
+  position: absolute;
+  max-width: 60rem;
+  background: linear-gradient(70deg, rgba(175, 250, 144, 0.5), rgba(200, 194, 89, 0.5));
+  border-radius: 0.5rem;
+  font-weight: 550;
+  color: #222222;
+  /*text-indent: -150px;*/
+  top: 21rem;
+  animation: colorChange 6s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ffe33b;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  100% {
+    background-color: #44fbde;
+  }
+}
+
+.main-4 {
+  position: absolute;
+
+  border-radius: 0.5rem;
+  font-weight: 550;
+  color: #222222;
+  background: linear-gradient(70deg, rgba(175, 250, 144, 0.5), rgba(200, 194, 89, 0.5));
+  font-size: 1.5rem;
+  top: 23rem;
+  animation: colorChange 6s infinite alternate;
+}
+
+.main-button {
+  position: absolute;
+  top: 30rem;
+  /*top: 30rem;*/
+  /*left: 50%;*/
+  /*transform: translateX(-50%);*/
+  /*place-items: center;*/
+}
+
+.button {
+  text-decoration: none;
+  padding: 1.2rem;
+  border: 2px darkblue;
+  border-radius: 1rem;
+  background-color: #215efb;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+
+}
+
+.button:hover {
+  background-color: #1f2f9a;
+  color: blue !important;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  top: 2rem;
+}
+
+.img-2 {
+
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-top: 0.3rem;
+  margin-left: -14rem;
+  margin-right: 1.5rem;
+
+}
+
+.heading-2 {
+
+  margin-top: 1rem;;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff0080;
+}
+
+.para-2 {
+
+  margin-top: 1.5rem;
+  font-weight: 700;
+  margin-left: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff0080;
+}
+
+.button-center {
+  display: flex;
+  justify-content: center; /* Horizontally Center */
+!important;
+  /* Vertically Center (if needed) */
+  /* If full-page centering is needed */
+}
+
+/* this is card section*/
+
+
+/*this is card section*/
+/*.card-section {*/
+/*  top: 5rem;*/
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: auto;*/
+/*  border: 2px solid black;*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(4, 1fr);*/
+/*  overflow: hidden;*/
+/*  justify-content: space-between;*/
+/*  align-content: space-between;*/
+/*  justify-items: center;*/
+/*  align-items: center;*/
+/*}*/
+
+.card-para{
+  text-wrap: initial;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.footer-last {
+  display: flex;
+  justify-content: center;
+
+}
+
+/*.card {*/
+/*  border: 2px solid black;*/
+/*  padding: 2rem;*/
+/*  max-width: 300px;*/
+
+
+/*}*/
+
+.card-1st {
+  text-align: center;
+  /*margin-top: 2rem;*/
+}
+
+.card-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+}
+
+
+
+.para-1 {
+  text-align: center;
+  line-height: 1.5rem;
+  color: black;
+  font-size: 0.55rem;
+}
+
+
+/* Jai css*/
+
+.card{
+  max-width: 302px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 0;
+  margin: 1rem;
+}
+.card-section {
+  width: 75%;
+  margin-top: 4rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  justify-items: center;
+  gap: 1rem;
+}
+
+
+
+/*this is card section*/
+/*.card-section {*/
+/*  top: 5rem;*/
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  height: auto;*/
+/*  border: 2px solid black;*/
+/*  display: grid;*/
+/*  grid-template-columns: repeat(4, 1fr);*/
+/*  overflow: hidden;*/
+/*  justify-content: space-between;*/
+/*  align-content: space-between;*/
+/*  justify-items: center;*/
+/*  align-items: center;*/
+/*}*/
+
+
+
+
+
+
+
+
+.ref {
+  border: 2px solid greenyellow;
+  font-size: 0.9rem;
+  margin: 0.5rem;
+  background-color: #5cb85c;
+  text-decoration: none;
+  padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 500;
+}
